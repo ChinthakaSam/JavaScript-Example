@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        //--------javascript basic----------------
+        //----------------------------------------
+        //--javascript functions------------------
+
+        function printName() {
+            document.write("Hello World");
+        }
+
+        printName();
+
+        function printOnConsole() {
+            console.log("Hello world...!")
+        }
+
+        printOnConsole();
+
+        //----------------------------------------
+        //--Passing value as parameter------------
+
+        function passParameter(name) {
+            console.log("My name is "+ name )
+        }
+
+        passParameter("Jhon Snow")
+
+        //----------------------------------------
+        //---Using variables----------------------
+        var myAge = 90;
+
+        function displayVariable(){
+            console.log("My age is " + myAge)
+        }
+
+        displayVariable();
+
+        //---------------------------------------
+        //---Function as a variable--------------
+
+        var age;
+
+        age = function () {
+            console.log("I'm 20 years old.")
+        }
+
+        age();
+
+        //---------------------------------------
+        //---function as a variable with passing
+        //value by parameter---------------------
+
+        var names = function (myName) {
+
+            console.log("My name is " + myName)
+        }
+
+        names("Stark");
+
+        //--------------------------------------
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
