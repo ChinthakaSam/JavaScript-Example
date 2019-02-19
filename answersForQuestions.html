@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answers</title>
+
+    <script>
+        //---------Question 01----------------
+        var firstFunction = function () {
+            console.log("Hello world")
+        }
+
+        function secondFunction(param) {
+            param()
+        }
+
+        secondFunction(firstFunction);
+        //------------------------------------
+
+        //--------Question 02-----------------
+
+        var student = {
+            namE : "chinthaka",
+            number : 12345,
+            getAge : function () {
+                console.log("Age is 20")
+            }
+        }
+        //calling function
+
+        console.log(student.namE);
+
+        //method 1
+        console.log(student.getAge());
+
+        //method 2
+        student.getAge();
+
+        //------------------------------------
+
+        //--------Question 03-----------------
+
+        var vehicleName = "car";
+
+        function printVehicleName() {
+            console.log(this.vehicleName)
+        }
+
+        var Vehicle = {
+            vehicleName: "van",
+            getVehicleName : printVehicleName
+        }
+
+        Vehicle.getVehicleName();
+        printVehicleName();
+
+        //------------------------------------
+        //--------Question 04-----------------
+
+        function calTax(tax) {
+
+            function taxAmount(amount) {
+                return amount + tax;
+
+            }
+            return taxAmount;
+        }
+
+        var newAmount = calTax(10);
+        console.log(newAmount(5));
+
+        //------------------------------------
+        //--------Question 05-----------------
+
+        function gitAPI() {
+            fetch('https://api.github.com/users')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                })
+                .catch(error => console.error(error))
+        }
+        gitAPI();
+
+        //-------------------------------------
+    </script>
+</head>
+<body>
+
+</body>
+</html>
